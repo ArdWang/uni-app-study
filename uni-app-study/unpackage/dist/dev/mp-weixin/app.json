@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/message/message",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "绿帽子",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#7CCD7C",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
+  },
+  "usingComponents": {}
+}
