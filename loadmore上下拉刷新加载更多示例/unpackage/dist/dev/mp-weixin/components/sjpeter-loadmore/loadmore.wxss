@@ -1,0 +1,45 @@
+
+.mint-loadmore {
+    overflow: hidden
+}
+.mint-loadmore-content {}
+.mint-loadmore-content.is-dropped {
+    -webkit-transition: .2s;
+    transition: .2s
+}
+.mint-loadmore-top, .mint-loadmore-bottom {
+    text-align: center;
+    height: 50px;
+    line-height: 50px
+}
+.mint-loadmore-top {
+    margin-top: -50px
+}
+.mint-loadmore-bottom {
+    margin-bottom: -50px
+}
+.loadmore-no {
+  margin-bottom: 0px;
+}
+.mint-loadmore-spinner {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle
+}
+.mint-loadmore-text {
+    vertical-align: middle
+}
+.load-more-no {
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 14px;
+}
+

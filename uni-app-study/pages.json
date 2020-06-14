@@ -1,5 +1,6 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ 
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path":"pages/message/message",
 			"style":{
@@ -13,13 +14,25 @@
 			}
 		},
 		{
+		    "path" : "pages/list/list",
+		    "style" : {
+				"navigationBarTitleText":"首页",
+				"navigationBarBackgroundColor": "#007AFF",
+				"enablePullDownRefresh":true,
+				"onReachBottomDistance":200
+			}
+		},
+		{
 			"path": "pages/index/index",
 			"style":{
 				"navigationBarTitleText":"首页",
 				"navigationBarBackgroundColor": "#007AFF"
 			}
-		}
-	    ,{
+		},
+		
+		
+		
+	    {
             "path" : "pages/detail/detail",
             "style" : {
 				"navigationBarTitleText":"详细",
@@ -40,13 +53,20 @@
 				"navigationBarBackgroundColor": "#007AFF"
 			}
         }
+        ,{
+            "path" : "pages/home/home",
+            "style" : {
+				"navigationBarTitleText":"数据绑定的学习",
+				"navigationBarBackgroundColor": "#007AFF"
+			}
+        }
+        
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "绿帽子",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#7CCD7C",
-		"enablePullDownRefresh":true,
 		"backgroundTextStyle":"light"
 		
 	},

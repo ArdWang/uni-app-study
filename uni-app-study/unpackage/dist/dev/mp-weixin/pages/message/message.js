@@ -130,12 +130,42 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!F:/GitHub_Project/uni-app-study/uni-app-study/pages/message/message.vue?vue&type=script&lang=js& ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
 //
+//
+//
+var _default =
+{
+  data: function data() {
+    return {
+      imgArr: [] };
+
+  },
+  methods: {
+    chooseImg: function chooseImg() {var _this = this;
+      uni.chooseImage({
+        count: 5,
+        success: function success(res) {
+          _this.imgArr = res.tempFilePaths;
+        } });
+
+    },
+    preview: function preview(current) {
+      uni.previewImage({
+        current: current,
+        urls: this.imgArr,
+        loop: true,
+        indicator: "number" });
+
+      console.log(current);
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 ],[[11,"common/runtime","common/vendor"]]]);

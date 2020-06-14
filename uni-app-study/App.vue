@@ -8,6 +8,9 @@
 		},
 		onHide: function() {
 			console.log('App Hide')
+		},
+		onError:function(){
+			console.log("出现异常",err)
 		}
 	}
 </script>

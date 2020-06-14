@@ -1,0 +1,19 @@
+
+.box{
+	width: 100px;
+	height: 100px;
+	background: #4CD964;
+}
+.box-active{
+	background: #DD524D;
+}
+.box2{
+	width: 200px;
+	height: 200px;
+	background: blue;
+}
+.box2-active{
+	background: pink;
+}
+
+

@@ -1,9 +1,12 @@
 {
   "pages": [
     "pages/message/message",
+    "pages/list/list",
     "pages/index/index",
     "pages/detail/detail",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/unistyle/unistyle",
+    "pages/home/home"
   ],
   "subPackages": [],
   "window": {
@@ -11,7 +14,6 @@
     "navigationBarTitleText": "绿帽子",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#7CCD7C",
-    "enablePullDownRefresh": true,
     "backgroundTextStyle": "light"
   },
   "tabBar": {

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "loadmore": "/components/sjpeter-loadmore/loadmore"
+  }
+}
