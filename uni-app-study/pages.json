@@ -61,6 +61,13 @@
 			}
         }
         
+        ,{
+            "path" : "pages/navigator/navigator",
+            "style" : {
+				"navigationBarTitleText":"导航的学习",
+				"navigationBarBackgroundColor": "#007AFF"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

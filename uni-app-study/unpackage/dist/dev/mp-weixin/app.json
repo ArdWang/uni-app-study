@@ -6,7 +6,8 @@
     "pages/detail/detail",
     "pages/contact/contact",
     "pages/unistyle/unistyle",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/navigator/navigator"
   ],
   "subPackages": [],
   "window": {
