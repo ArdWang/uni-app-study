@@ -1,19 +1,31 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+		<test v-if="flag" :title="title" @myEven="getNum"></test>
+		<button type="primary" @click="checkTest">切换test组件</button>
+		这是子组件传递过来的{{num}}
+		<text-a></text-a>
+		<text-b></text-b>
 	</view>
 </template>
 
 <script>
+	import test from "../../compoments/test.vue"
+	import testa from "../../compoments/a.vue"
+	import testb from "../../compoments/b.vue"
 	export default {
+		components:{
+			test,
+			"text-a":testa,
+			"text-b":testb
+		},
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				num:0,
+				flag:true
 			}
 		},
+		
 		onLoad(options) {
 			console.log("页面加载了")
 		},
@@ -27,7 +39,13 @@
 			console.log("页面隐藏")
 		},
 		methods: {
-
+			checkTest(){
+				this.flag = !this.flag
+			},
+			getNum(num){
+				console.log(num)
+				this.num = num
+			}
 		}
 	}
 </script>
