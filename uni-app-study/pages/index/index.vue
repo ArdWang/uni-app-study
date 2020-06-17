@@ -5,6 +5,7 @@
 		这是子组件传递过来的{{num}}
 		<text-a></text-a>
 		<text-b></text-b>
+		<uni-calendar :insert="true" :lunar="true" :start-date="'2019-3-2'" :end-date="'2019-5-20'" @change="change" />
 	</view>
 </template>
 
@@ -12,20 +13,22 @@
 	import test from "../../compoments/test.vue"
 	import testa from "../../compoments/a.vue"
 	import testb from "../../compoments/b.vue"
+	import uniCalendar from '@/components/uni-calendar/uni-calendar.vue'
 	export default {
-		components:{
+		components: {
 			test,
-			"text-a":testa,
-			"text-b":testb
+			"text-a": testa,
+			"text-b": testb,
+			uniCalendar
 		},
 		data() {
 			return {
 				title: 'Hello',
-				num:0,
-				flag:true
+				num: 0,
+				flag: true
 			}
 		},
-		
+
 		onLoad(options) {
 			console.log("页面加载了")
 		},
@@ -39,12 +42,15 @@
 			console.log("页面隐藏")
 		},
 		methods: {
-			checkTest(){
+			checkTest() {
 				this.flag = !this.flag
 			},
-			getNum(num){
+			getNum(num) {
 				console.log(num)
 				this.num = num
+			},
+			change(e){
+				console.log('触发了change',e)
 			}
 		}
 	}
